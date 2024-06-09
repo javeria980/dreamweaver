@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Oleo+Script&display=swap" rel="stylesheet">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+<body>        
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <img src="image/logo2.png" height="90px" width="240px" id="logo">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <i class="fa-solid fa-bars-staggered bar_icon" id="bar"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-light">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link text-light">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ticket.html" class="nav-link text-light">Ticket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-light">Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="disclaimer.html" class="nav-link text-light">Disclaimer</a>
+                    </li>
+ <i class="fa-regular fa-user user-icon" id="icon2" style="font-size: 24px;"></i> 
+ <i class="fa fa-ticket cart-icon" id="icon3" style="font-size:24px"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade usercart" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="form-title text-center">
+                    <h4 id="dis" class="float-left">Login</h4>
+                    <button class="btn btn-outline-light close-btn" data-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-times close-btn"></i>
+                    </button>
+                    <br class="clearfix">
+                </div>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1" placeholder="Your email address..."style="height: 50px;">
+                  </div><br>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Your password..." style="height: 50px;">
+                  </div>
+                  <br>
+                  <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                </form>
+                <br>
+                <div class="text-center text-muted delimiter">or use a social network</div>
+                <br>
+                <div class="d-flex justify-content-center social-buttons">
+                  <button type="button" class="btn btn-secondary btn-round m-1" data-toggle="tooltip" data-placement="top" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-round m-1" data-toggle="tooltip" data-placement="top" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-round m-1" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                  </button>
+              </div>
+            </div>
+          </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <div class="signup-section">Not a member yet? <a href="#signup" class="text-info"> Sign Up</a>.</div>
+            </div>
+           
+        </div>
+      </div>
+    </div>
+    <section id="signup">
+        <div id="id01" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" action="/action_page.php">
+                <div class="modal-header">
+                    <div class="text-center">
+                    <h1 id="dis">Sign Up</h1>
+                    </div>
+                    <br>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                <p>Please fill in this form to create an account.</p>
+                <input type="email" class="form-control" placeholder="Enter Email" name="email" required style="height: 45px;">
+          <br>
+                <input type="password" class="form-control" placeholder="Enter Password" name="psw"  style="height: 45px;" required>
+          <br>
+                <input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat"  style="height: 45px;"required>
+                <br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+          
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          
+                <div class="clearfix">
+                    <button type="button" class="btn btn-info btn-block btn-danger btn-back-to-login">Back to Login</button>
+                  <button type="button" class="btn btn-info btn-block btn-round">SIGNUP</button>
+                </div>
+              </div>
+            </form>
+            </div>
+        </div>
+          </div>
+        </section>
+    <div class="cart">
+        <h2 class="cart-title" id="dis">Tickets<h2>
+        <div class="cart-content">
+        </div>
+        <button type="button" class="btn-buy">Proceed To CheckOut</button>
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+      </div>
+      <section id="disclaimer">
+    <div class="safety-info">
+        <br><br><br><br><br><br><br>
+        <div class="container">
+        <div class="row">
+            <div class="div">    
+                <h1 id="dis">DISCLAIMER</h1>
+            </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="safety-content">
+        <div class="site-heading mb-4">
+        <span class="site-title-tagline" id="span1" style="color: black;">Safety Info</span>
+        <h2 class="site-title mb-10" id="span2">Please Follow Our Safety Info</h2>
+        <p class="text-black" style="font-size: 15px; margin-top: 10px;">
+            An amusement park is a park that features various attractions, such as rides and games, as well as other events for entertainment purposes.
+        </p>
+        </div>
+        <div class="safety-content-wrapper">
+        <ul class="safety-content-info">
+        <li><i class="fa-regular fa-circle-check"></i>Smoking is prohibited, including e-cigarettes</li>
+        <li><i class="fa-regular fa-circle-check"></i>Do not tap or bang on exhibit glass</li>
+        <li><i class="fa-regular fa-circle-check"></i>Respect Park Rules & Gudie Line</li>
+        <li><i class="fa-regular fa-circle-check"></i>Do not throw objects</li>
+        <li><i class="fa-regular fa-circle-check"></i>Respect walls and fences throughout the Park</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="safety-img">
+        <div class="video-wrapper">
+        <a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=ALXKzjfWj8E" target="_blank">
+        <i class="fas fa-play" id="play"></i>
+        </a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+</section>
+<br><br>
+<footer class="footer" style="background-color: black;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="container mt-3">
+                    <img class="img" src="image/logo2.png" alt="" height="120px" width="300px">
+                </div>
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/" target="_blank"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/?lang=en" target="_blank"
+                    role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;"href="https://www.pinterest.com/" target="_blank">
+                    <i class="fab fa-square-pinterest"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;"href="https://www.instagram.com/"  target="_blank"
+                    role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="https://web.whatsapp.com/" target="_blank"
+                    role="button"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 text-center mt-5">
+
+                <!-- first -->
+                <h2 class="text-white">PAGES </h2>
+                <ul class="list-unstyled text-white" style="font-size: smaller;">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link text-light">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-light">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link text-light">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-light">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="disclaimer.html" class="nav-link text-light">Disclaimer</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- second -->
+            <div class="col-lg-3 col-md-6 text-center mt-5">
+                <h2 class="text-white">TIMING</h2>
+                <ul class="list-unstyled text-white" style="font-size: smaller;">
+                    <li class="nav-item active">
+                        MON : 11:30 TO 10:00 PM
+                    </li><br>
+                    <li class="nav-item">
+                        TUE : 11:30 TO 10:00 PM
+                    </li><br>
+                    <li class="nav-item">
+                        WED : 11:30 TO 10:00 PM
+                    </li><br>
+                    <li class="nav-item">
+                        THUR : 11:30 TO 10:00 PM
+                    </li><br>
+                    <li class="nav-item">
+                        FRI : 11:30 TO 10:00 PM
+                    </li><br>
+                    <li class="nav-item">
+                        SAT : 11:30 TO 1:00 AM
+                    </li><br>
+                    <li class="nav-item">
+                        SUN : 11:30 TO 1:00 AM
+                    </li>
+                </ul>
+            </div>
+            <!-- third -->
+            <div class="col-lg-3 col-md-6 text-center mt-5">
+                <h2 class="text-white">CONTACTS</h2>
+                <ul class="list-unstyled text-white" style="font-size: smaller;">
+                    <li><i class="fa-solid fa-phone"></i>
+                        NUM : + 01 234 567 89</li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        email :dreamwiver@gmail.com
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-address-book"></i>
+                        Karachi
+                    </li>
+
+
+            </div>
+        </div>
+        </ul>
+        <div class="text-center text-white">
+            <p>2024 @copyright</p>
+        </div>
+    </div>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</body>
+
+</html>
